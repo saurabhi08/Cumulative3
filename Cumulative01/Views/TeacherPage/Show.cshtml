@@ -1,0 +1,15 @@
+﻿@model Cumulative01.Models.Teacher;
+
+<div>
+	<a href="/TeacherPage/DeleteConfirm/@Model.TeacherId" style="display:inline-block;margin:20px 0;padding:10px 20px;background:#dc3545;color:#fff;text-decoration:none;border-radius:5px;">Delete this Teacher</a>
+	<a href="/TeacherPage/Edit/@Model.TeacherId">Edit</a>
+
+
+</div>
+
+<h1><I> Teacher ID: @Model.TeacherId </I> </h1>
+<p><I>Teacher First Name: @Model.TeacherFirstName </I></p>
+<p><I>Teacher Last Name: @Model.TeacherLastName </I></p>
+<p><I>	Teacher Employee ID: @Model.EmployeeID </I></p>
+<p><I>Hired Since: @Model.HireDate </I></p>
+<p><I>Salary Package: @Model.Salary </I></p>

@@ -1,0 +1,28 @@
+﻿@model Cumulative01.Models.Teacher
+
+<h2>Edit Teacher</h2>
+
+<form method="post" action="/TeacherPage/Update/@Model.TeacherId">
+    <div>
+        <label for="TeacherFName">First Name</label>
+        <input type="text" id="TeacherFName" name="TeacherFName" value="@Model.TeacherFirstName" />
+    </div>
+    <div>
+        <label for="TeacherLName">Last Name</label>
+        <input type="text" id="TeacherLName" name="TeacherLName" value="@Model.TeacherLastName" />
+    </div>
+    <div>
+        <label for="TeacherEmail">Employee ID</label>
+        <input type="number" id="EmployeeID" name="EmployeeID" value="@Model.EmployeeID" />
+    </div>
+    <div>
+        <label for="HireDate">Hire Date</label>
+        <input type="date" name="HireDate" id="HireDate" />
+    </div>
+
+    <div>
+        <label for="Salary">Salary</label>
+        <input type="text" name="Salary" id="Salary" />
+    </div>
+    <button type="submit">Save</button>
+</form>
